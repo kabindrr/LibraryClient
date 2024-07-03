@@ -1,11 +1,9 @@
 import { apiProcessor } from "../helpers/axiosHelper";
-
-const url = "http://localhost:8010";
-// const userEP = url + "/api/v1/users";
+const userEP = import.meta.env.VITE_APP_SERVER_ROOT + "/api/v1/users";
 
 export const signUpUser = (obj) => {
   const axiosObj = {
-    url,
+    url: userEP,
     method: "post",
     data: obj,
   };
@@ -14,7 +12,7 @@ export const signUpUser = (obj) => {
 
 export const loginUser = (obj) => {
   const axiosObj = {
-    url,
+    url: userEP + "/login",
     method: "get",
     data: obj,
   };

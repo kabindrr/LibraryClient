@@ -5,6 +5,4 @@ export const loginUserAction = (obj) => (dispatch) => {
   const result = loginUser(obj);
 
   dispatch(setUser(result));
-
-  dispatch(setAllUser(result));
 };
