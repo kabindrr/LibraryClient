@@ -55,47 +55,36 @@ To set up this project in your device locally please follow these steps
 1. **Clone the Repository**
    Run the following command in your terminal:
 
-   > ```
-   >  git clone https://github.com/kabindrr/LibraryClient.git
-   > ```
+   git clone https://github.com/kabindrr/LibraryClient.git
 
 2. **Navigate to the Project Directory**:
 
-   ```
    cd client
-
-   ```
 
 3. **Install Dependencies**:
 
-> ```
 > yarn
-> ```
 
 4. **Run the development server**:
-   > ```
+
    > yarn dev
-   > ```
 
 ## Uses of this project
 
 ## Project Structure
 
-````react-library
+react-library
 |--public
 |--src
 | |--components
 | | |--StudentLogin.jsx
-```
-
-
-
 
 ## Contributing
+
 There are many different ways to contribute to this project. If you're interested, please see the contact information below and send me a message how we can make this application more efficient and i will get back to you shortly.
 
-
 ## License
+
 MIT License
 
 Copyright (c) [2024] [Kabindra Ranabhat]
@@ -120,7 +109,6 @@ SOFTWARE.
 ([![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 )
 
-
 ## Contact
 
 If you have any questions or want to get in touch, feel free to reach out:
@@ -129,14 +117,6 @@ If you have any questions or want to get in touch, feel free to reach out:
 
 )
 
+## Final Note
+
 ------Thank You For visiting my application -----
-
-````
-
-```
-
-```
-
-```
-
-```
