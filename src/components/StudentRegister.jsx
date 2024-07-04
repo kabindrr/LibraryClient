@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { signUpUser } from "../feature/userAxios";
+import { useNavigate } from "react-router-dom";
+import { signupUserAction } from "../feature/userAction";
+import { useDispatch } from "react-redux";
 
 const initialState = {
   fName: null,
@@ -13,20 +15,21 @@ const initialState = {
 
 export const StudentRegister = () => {
   const [form, setForm] = useState(initialState);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleOnSubmit = async (e) => {
+  const handleOnSubmit = (e) => {
     e.preventDefault();
     const { confirmPassword, ...rest } = form;
     if (confirmPassword !== rest.password) {
       return window.alert("Password do not match");
     }
-    const result = await signUpUser(rest);
-    console.log(result);
+    dispatch(signupUserAction(rest, navigate));
   };
   return (
     <>
